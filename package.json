@@ -1,6 +1,6 @@
 {
   "name": "node-infinito-util",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Infinito SDK",
   "main": "index.js",
   "directories": {
@@ -28,7 +28,7 @@
   },
   "homepage": "https://platform.infinito.io/",
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.19.0",
     "sha.js": "^2.4.11"
   },
   "devDependencies": {

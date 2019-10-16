@@ -20,7 +20,7 @@ describe('token', function() {
       try {
         tokenProvider = new TokenProvider();
         Assert.fail('should be error');
-      } catch(err) {
+      } catch (err) {
         console.log('err.message :', err.message);
         Assert.equal('Missing required parameter options', err.message);
       }
@@ -33,7 +33,7 @@ describe('token', function() {
           url: ConfigTest.AUTH_URL,
         });
         Assert.fail('should be error');
-      } catch(err) {
+      } catch (err) {
         Assert.equal('Missing required parameter options.apiKey', err.message);
       }
     });
@@ -45,7 +45,7 @@ describe('token', function() {
           url: ConfigTest.AUTH_URL,
         });
         Assert.fail('should be error');
-      } catch(err) {
+      } catch (err) {
         Assert.equal('Missing required parameter options.secret', err.message);
       }
     });
@@ -57,12 +57,12 @@ describe('token', function() {
           secret: ConfigTest.SECRET,
         });
         Assert.fail('should be error');
-      } catch(err) {
+      } catch (err) {
         Assert.equal('Missing required parameter options.url', err.message);
       }
-    })
+    });
 
-  })
+  });
 
   describe('#getLatestToken()', async () => {
     it('Should get new token', async () => {
